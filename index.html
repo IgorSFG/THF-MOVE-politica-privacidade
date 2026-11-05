@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Política de Privacidade da THF MOVE: dados coletados, finalidades, uso de inteligência artificial e direitos do titular." name="description"/>
+<meta content="#0A0A0A" name="theme-color"/>
+<title>Política de Privacidade – THF MOVE</title>
+<style>
+/* THF MOVE | sistema visual do aplicativo, sem recursos externos */
+:root { color-scheme: dark; --text:#FFFFFF; --muted:#9CA3AF; --bg:#0A0A0A; --surface:#161616; --gold:#D4AF37; --border:#262626; --success:#10B981; --error:#EF4444; --ink:#07131e; --blue:#139ad6; }
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:34px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:370px;pointer-events:none;background:radial-gradient(ellipse at 77% 0%,rgba(17,135,195,.16),transparent 58%),radial-gradient(ellipse at 22% -14%,rgba(212,175,55,.12),transparent 54%);z-index:-1}
+a{color:#e6c56f;text-underline-offset:3px}a:hover{color:#fff0bd}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:4px}
+.skip-link{position:absolute;left:15px;top:-70px;padding:10px 15px;background:var(--gold);color:#000;font-weight:700;z-index:999}
+.skip-link:focus{top:12px}
+.topbar{border-bottom:1px solid #202020;background:rgba(10,10,10,.86)}
+.topbar-inner{max-width:1180px;margin:auto;padding:14px 30px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand img{width:46px;height:46px;object-fit:contain}
+.brand strong{display:block;font-size:15px;font-weight:900;letter-spacing:.11em;line-height:1.25}
+.brand span{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.top-link{border:1px solid #4d4226;border-radius:100px;padding:8px 15px;text-decoration:none;color:#f2d587;font-size:12px;font-weight:650;white-space:nowrap}
+.top-link:hover{background:#201b11;color:#fff}
+.wrap{max-width:1180px;padding:0 30px;margin:0 auto;display:grid;grid-template-columns:240px minmax(0,1fr);gap:60px}
+.sidebar{padding-top:68px}.sidebar-inner{position:sticky;top:26px}
+.nav-label,.eyebrow{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.19em;font-weight:750;font-size:11px}
+.sidebar nav{display:flex;flex-direction:column;gap:2px;margin-top:19px}
+.sidebar a{color:#afb1b4;text-decoration:none;display:block;padding:9px 12px;border-left:2px solid transparent;font-size:13px;line-height:1.4;transition:color .15s,background .15s}
+.sidebar a:hover,.sidebar a:focus-visible{color:white;background:#151515;border-left-color:var(--gold)}
+.sidebar .divider{height:1px;background:var(--border);margin:24px 0}
+.sidebar small{display:block;font-size:12px;line-height:1.7;color:#8c939d}
+.content{min-width:0;padding-bottom:110px}
+.hero{position:relative;overflow:hidden;margin-top:54px;padding:43px 46px 42px;background:linear-gradient(120deg,rgba(22,22,22,.96),rgba(13,22,32,.92));border:1px solid #2f2b22;border-radius:21px;box-shadow:0 24px 90px rgba(0,0,0,.19)}
+.hero:after{content:"";width:280px;height:280px;position:absolute;right:-125px;top:-126px;border:1px solid rgba(212,175,55,.15);border-radius:50%;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 155px;gap:22px;align-items:center}
+.hero img{width:155px;height:155px;object-fit:contain;filter:drop-shadow(0 9px 30px rgba(5,105,171,.15))}
+h1{font-size:clamp(30px,4.4vw,49px);letter-spacing:-.042em;line-height:1.14;margin:16px 0 16px;font-weight:850}
+.hero p{font-size:15px;max-width:560px;margin:0;color:#c2c7ce;line-height:1.8}
+.meta{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 20px;color:#aeb7c1;font-size:12px}
+.meta strong{color:#f2d487;font-weight:650}
+.review-alert{border:1px solid #68582d;background:#1d1a12;border-radius:12px;margin-top:20px;padding:14px 18px;font-size:13px;color:#ead9ae;line-height:1.65}
+.review-alert strong{color:#ffe5a0}
+.quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:24px 0 37px}
+.quick-item{padding:18px 19px 17px;border:1px solid var(--border);background:#121212;border-radius:13px}
+.quick-item .quick-icon{display:grid;place-items:center;width:32px;height:32px;background:#262114;border-radius:9px;font-size:16px;color:#e5bf53;font-weight:bold;margin-bottom:12px}
+.quick-item h2{font-size:13px;letter-spacing:-.01em;line-height:1.4;margin:0 0 7px}
+.quick-item p{font-size:12px;line-height:1.65;color:#a9b0b9;margin:0}
+.section{padding:32px 2px 36px;border-bottom:1px solid var(--border);scroll-margin-top:24px}
+.section h2{font-size:22px;letter-spacing:-.028em;line-height:1.3;margin:8px 0 20px;font-weight:760}
+.section p{color:#c3c8d0;font-size:14px;margin:11px 0 16px;line-height:1.9}
+.section strong{color:#f6f6f7;font-weight:690}
+.section ul{margin:11px 0 17px;padding-left:22px;color:#c3c8d0;font-size:14px}
+.section li{margin:9px 0;line-height:1.8;padding-left:2px}
+.section li::marker{color:var(--gold)}
+.section .note{border-left:2px solid var(--gold);padding:11px 15px;background:#15130e;border-radius:0 9px 9px 0;color:#d9d0b7;font-size:13px}
+.section .note p{margin:0;font-size:13px;color:#d9d0b7}
+.field{display:inline-block;overflow-wrap:anywhere;color:#ffe5a0;font-weight:700;background:#332a14;padding:2px 6px;border-radius:4px;border:1px dashed #86703b;font-size:.91em;line-height:1.7}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.info{padding:14px 16px;border:1px solid var(--border);background:#131313;border-radius:9px}
+.info span{display:block;color:#8f99a7;text-transform:uppercase;letter-spacing:.09em;font-size:10px;font-weight:750;margin-bottom:5px}
+.info p{margin:0;font-size:13px;line-height:1.6}
+.table-wrap{width:100%;overflow:auto;border:1px solid #303030;border-radius:12px;margin:22px 0 16px}
+table{width:100%;border-collapse:collapse;min-width:480px;font-size:13px;text-align:left}
+thead{background:#1e1c18;color:#eecf7b}th{font-weight:750;letter-spacing:.015em}
+th,td{padding:14px 16px;vertical-align:top;border-bottom:1px solid #292929}
+tbody td{color:#bbc1ca}tbody tr:last-child td{border:0}
+.section .section-actions{margin-top:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:9px;background:var(--gold);color:#13100b;font-size:13px;font-weight:800;padding:12px 17px;transition:transform .1s,background .1s}
+.btn:hover{color:#000;background:#e9c96a;transform:translateY(-1px)}
+.btn.secondary{border:1px solid #735f31;color:#efd58f;background:#201b11}
+.btn.secondary:hover{background:#302715;color:white}
+.foot{border-top:1px solid #292929;padding:26px 30px 38px;text-align:center;font-size:12px;color:#8d96a0}
+.foot strong{color:#eee}
+.foot a{color:#cdb15d}
+.step-list{counter-reset:steps;list-style:none!important;padding-left:0!important}
+.step-list li{position:relative;padding:3px 0 10px 49px!important;counter-increment:steps}
+.step-list li::before{content:counter(steps);position:absolute;left:0;top:1px;background:#2d2514;color:#f0ce6e;border-radius:9px;width:32px;height:32px;display:grid;place-items:center;font-weight:800}
+@media(max-width:960px){.wrap{grid-template-columns:200px minmax(0,1fr);gap:32px}.hero{padding:32px}.hero-grid{grid-template-columns:1fr 120px}.hero img{width:120px;height:120px}.quick{grid-template-columns:1fr}}
+@media(max-width:720px){.topbar-inner{padding:12px 18px}.wrap{display:block;padding:0 18px}.sidebar{display:none}.content{padding-bottom:60px}.hero{margin-top:22px;border-radius:16px;padding:28px 23px}.hero-grid{display:flex;flex-direction:column-reverse;align-items:flex-start;gap:7px}.hero img{width:105px;height:105px}.meta{margin-top:20px}.quick{margin:16px 0 16px;gap:9px}.quick-item{padding:14px 16px;display:grid;grid-template-columns:32px 1fr;column-gap:12px;align-items:start}.quick-item .quick-icon{grid-row:1/3;margin:0}.quick-item p{grid-column:2}.section{padding:25px 2px 27px}.section h2{font-size:20px}.info-grid{grid-template-columns:1fr}.top-link{font-size:11px;padding:7px 10px}.brand img{width:39px;height:39px}.brand strong{font-size:13px}.brand span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+@media print{body{background:#fff!important;color:#161616!important;font-size:12px}body::before,.sidebar,.topbar,.review-alert,.quick,.foot{display:none!important}.wrap{display:block;padding:0}.hero{margin:0;border:0;background:none!important;box-shadow:none;padding:0 0 15px}.hero img{width:100px;height:100px}.hero p,.section p,.section ul,.section li,.section strong{color:#222!important}.section{break-inside:avoid;padding:14px 0}.section h2,.eyebrow{color:#222}table,th,td{border-color:#bbb;color:#222!important}.field{color:#000!important;background:#fff!important}.content{padding:0}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#principal">Pular para conteúdo</a>
+<header class="topbar"><div class="topbar-inner">
+<a aria-label="THF MOVE — política de privacidade" class="brand" href="index.html"><img alt="" height="46" src="THFM-logo-nobackground.png" width="46"/><div><strong>THF MOVE</strong><span>Privacidade &amp; confiança</span></div></a>
+</div></header>
+<div class="wrap">
+<aside aria-label="Sumário" class="sidebar"><div class="sidebar-inner"><span class="nav-label">Nesta página</span><nav aria-label="Seções da política"><a href="#responsavel">Quem é responsável</a>
+<a href="#dados">Dados tratados</a>
+<a href="#finalidades">Finalidades e bases legais</a>
+<a href="#compartilhamento">Com quem compartilhamos</a>
+<a href="#inteligencia-artificial">Inteligência artificial</a>
+<a href="#retencao">Conservação e exclusão</a>
+<a href="#seguranca">Segurança</a>
+<a href="#seus-direitos">Seus direitos</a>
+<a href="#internacional">Transferência internacional</a>
+<a href="#menores">Público adulto (18+)</a>
+<a href="#tecnologias">Tecnologias e permissões</a>
+<a href="#atualizacoes">Atualizações</a>
+<a href="#contato">Contato</a></nav><div class="divider"></div><small>THF MOVE · Privacidade e transparência no tratamento de dados.</small></div></aside>
+<main class="content" id="principal"><section aria-labelledby="titulo-pagina" class="hero"><div class="hero-grid"><div><span class="eyebrow">Proteção de dados · LGPD</span><h1 id="titulo-pagina">Política de<br/>Privacidade</h1><p>Saiba quais informações são utilizadas na THF MOVE, por que elas são necessárias e como exercer seus direitos.</p></div><img alt="Logotipo da THF MOVE: leão azul com detalhes dourados e halteres" height="155" src="THFM-logo-nobackground.png" width="155"/></div><div class="meta"><span><strong>Aplicativo:</strong> THF MOVE</span><span><strong>Última atualização:</strong> 05/11/2026</span><span><strong>Legislação:</strong> Lei nº 13.709/2018</span></section>
+<div aria-label="Resumo da política" class="quick"><div class="quick-item"><div aria-hidden="true" class="quick-icon">01</div><h2>Dados para o treino</h2><p>Informações de conta, planos de exercícios, execução e interação entre aluno e treinador.</p></div><div class="quick-item"><div aria-hidden="true" class="quick-icon">02</div><h2>Controle e transparência</h2><p>Explicamos acesso, compartilhamento, IA e regras de conservação das informações.</p></div><div class="quick-item"><div aria-hidden="true" class="quick-icon">03</div><h2>Seus direitos</h2><p>Você pode solicitar acesso, correção e exclusão nos casos previstos na LGPD.</p></div></div>
+<section class="section" id="responsavel"><span class="eyebrow">01 · Identificação</span><h2>Quem é responsável pelo tratamento?</h2>
+<p>Esta Política de Privacidade descreve o tratamento de dados pessoais no aplicativo <strong>THF MOVE</strong>, que conecta treinadores e alunos para organização de treinos, acompanhamento de atividades e comunicação.</p>
+<div class="info-grid">
+<div class="info"><span>Responsável / controlador</span><p>Thiago Figueiredo Dias da Costa</p></div>
+<div class="info"><span>Localidade</span><p>São Paulo, SP, Brasil</p></div>
+<div class="info"><span>E-mail para privacidade</span><p><a href="mailto:thi.mkt82@gmail.com">thi.mkt82@gmail.com</a></p></div>
+<div class="info"><span>Telefone de contato</span><p><a href="tel:+5511968443912">(11) 96844-3912</a></p></div></div>
+<p>O acesso de treinadores aos dados de seus respectivos alunos é necessário para a prestação do acompanhamento de treinos e deve respeitar as permissões e os vínculos estabelecidos no aplicativo. A responsabilidade de cada profissional pelo uso posterior das informações deve ser analisada conforme a sua atuação.</p></section>
+<section class="section" id="dados"><span class="eyebrow">02 · Coleta</span><h2>Quais dados pessoais tratamos?</h2>
+<p>Conforme as funcionalidades utilizadas, a THF MOVE pode tratar:</p>
+<ul>
+<li><strong>Identificação e conta:</strong> e-mail, identificador da conta, informações de perfil informadas no cadastro e tipo de acesso (treinador ou aluno). O e-mail serve para identificação, autenticação e recuperação da conta, sem finalidade de marketing.</li>
+<li><strong>Treinos e acompanhamento:</strong> planos e exercícios criados pelo treinador, registros de execução, evolução e feedback do aluno.</li>
+<li><strong>Relacionamentos e chat:</strong> convites, vínculo entre treinador e aluno e mensagens trocadas pelo aplicativo.</li>
+<li><strong>Assinaturas:</strong> situação da assinatura, avisos e datas de vencimento exibidos no aplicativo, quando aplicáveis.</li>
+<li><strong>IA para treinos:</strong> informações do contexto do aluno e instruções do treinador incluídas nas solicitações de sugestões de treino.</li>
+<li><strong>Dados técnicos:</strong> informações necessárias à autenticação, operação e segurança, que podem incluir IP, identificadores técnicos e registros de acesso processados pela infraestrutura.</li>
+</ul>
+<p><strong>Informações de saúde:</strong> os alunos podem fornecer <strong>manualmente e diretamente ao treinador</strong> informações como lesões, limitações físicas, condições de saúde ou restrições para a prática de exercícios. Se essas informações forem compartilhadas por meio do chat, feedbacks ou outros recursos da THF MOVE, <strong>elas poderão ser armazenadas no ecossistema do aplicativo</strong> para apoiar o acompanhamento. Informações dessa natureza podem ser <strong>dados pessoais sensíveis</strong>, sujeitos aos requisitos do art. 11 da LGPD.</p>
+<div class="note"><p>O envio de dados de saúde é feito pelo usuário; não há indicação de coleta clínica automática pelo dispositivo. Evite compartilhar dados de saúde que não sejam necessários ao acompanhamento ou em conversas não relacionadas ao serviço.</p></div>
+<p>O aplicativo não exige autorizações adicionais para acessar câmera, microfone, localização, contatos ou galeria de fotos.</p>
+</section>
+<section class="section" id="finalidades"><span class="eyebrow">03 · Utilização</span><h2>Para que utilizamos os dados?</h2>
+<p>As informações são tratadas para oferecer as funcionalidades da THF MOVE, de acordo com a finalidade e a base legal correspondente.</p>
+<div class="table-wrap"><table><thead><tr><th>Finalidade</th><th>Fundamento jurídico a observar</th></tr></thead><tbody>
+<tr><td>Cadastrar usuários, autenticar acesso e permitir recuperação da conta pelo e-mail.</td><td>Execução de contrato ou procedimentos preliminares, quando cabível (LGPD, art. 7º, V).</td></tr>
+<tr><td>Criar e acompanhar treinos, registrar feedbacks, gerenciar vínculos e permitir o chat entre aluno e treinador.</td><td>Execução do serviço (art. 7º, V) para dados comuns; para dados de saúde, hipótese específica do art. 11.</td></tr>
+<tr><td>Exibir informações e vencimento de assinaturas.</td><td>Execução de contrato, quando aplicável.</td></tr>
+<tr><td>Proteger contas, manter a infraestrutura e prevenir abusos.</td><td>Hipóteses do art. 7º pertinentes à operação, observados necessidade e proporcionalidade.</td></tr>
+<tr><td>Gerar sugestões de treino com IA GroqCloud usando dados fornecidos no contexto enviado à ferramenta.</td><td>Base legal adequada à finalidade; caso sejam enviados dados sensíveis de saúde, aplica-se também o art. 11 da LGPD.</td></tr>
+</tbody></table></div>
+<p>O <strong>e-mail de cadastro não é utilizado para marketing</strong>. O fornecimento voluntário de informações de saúde não dispensa a identificação e a implementação de uma hipótese legal apropriada para tratá-las. Quando a base escolhida for consentimento, ele deverá ser específico, destacado, informado e passível de revogação, nos termos da LGPD.</p>
+</section>
+<section class="section" id="compartilhamento"><span class="eyebrow">04 · Acesso e terceiros</span><h2>Com quem os dados podem ser compartilhados?</h2>
+<ul>
+<li><strong>Treinadores e alunos vinculados:</strong> dados pertinentes aos treinos, convites e mensagens, de acordo com o relacionamento e o perfil de acesso.</li>
+<li><strong>Supabase:</strong> serviço de infraestrutura usado para autenticação, armazenamento de informações e comunicação em tempo real.</li>
+<li><strong>GroqCloud (Groq):</strong> serviço de inteligência artificial que recebe as informações inseridas nas solicitações de geração de sugestões de treino e devolve as respostas processadas.</li>
+<li><strong>Autoridades públicas:</strong> quando houver obrigação legal ou determinação legítima.</li>
+</ul>
+<p>Os prestadores de infraestrutura podem tratar dados técnicos e registros operacionais necessários à prestação e à proteção de seus serviços. O compartilhamento deve observar as finalidades informadas, a necessidade de acesso e a legislação aplicável.</p></section>
+<section class="section" id="inteligencia-artificial"><span class="eyebrow">05 · Recurso de IA</span><h2>Como funciona a sugestão de treinos por IA?</h2>
+<p>A THF MOVE utiliza <strong>GroqCloud (Groq)</strong> para gerar sugestões de treino a partir de informações incluídas no contexto do aluno e das orientações do treinador. O conteúdo da requisição é transmitido à Groq para processamento. <strong>Dados de saúde somente estarão presentes nessa transmissão se forem incluídos nas informações enviadas ao recurso.</strong></p>
+<div class="info-grid">
+<div class="info"><span>Fornecedor de IA</span><p><a href="https://groq.com/" rel="noopener noreferrer" target="_blank">GroqCloud (Groq)</a></p></div>
+<div class="info"><span>Uso no treinamento de modelos</span><p><strong>A Groq não usa entradas e saídas de clientes para treinar ou ajustar modelos sem autorização ou instrução expressa.</strong></p></div>
+</div>
+<p>Essa declaração decorre dos <a href="https://console.groq.com/docs/legal/services-agreement" rel="noopener noreferrer" target="_blank">termos de serviço da Groq</a> e <strong>não significa ausência absoluta de armazenamento</strong>. Conforme sua <a href="https://console.groq.com/docs/your-data" rel="noopener noreferrer" target="_blank">documentação de retenção</a>, requisições comuns de inferência não são retidas por padrão, mas podem ser registradas temporariamente para investigação de falhas ou possíveis abusos por <strong>até 30 dias</strong>, ou por mais tempo se exigido por lei. A opção <em>Zero Data Retention</em> (ZDR) existe, mas sua ativação não foi confirmada.</p>
+<p>As sugestões são apoio ao treinador e não substituem orientação médica ou avaliação individualizada por profissional habilitado. Informações sensíveis de saúde demandam tratamento especialmente protegido, inclusive quando incluídas no contexto enviado à IA.</p>
+</section>
+<section class="section" id="retencao"><span class="eyebrow">06 · Ciclo de vida</span><h2>Por quanto tempo os dados são mantidos?</h2>
+<p>Os registros utilizados para prestar o serviço permanecem enquanto a conta estiver em uso, <strong>até que o usuário solicite sua exclusão</strong>. Os princípios de necessidade e adequação da LGPD continuam aplicáveis.</p>
+<div class="table-wrap"><table><thead><tr><th>Categoria</th><th>Critério informado de retenção</th></tr></thead><tbody>
+<tr><td>Conta, perfil e e-mail</td><td>Enquanto a conta permanecer ativa; exclusão mediante solicitação do titular, ressalvadas hipóteses legais de conservação.</td></tr>
+<tr><td>Treinos, feedbacks e eventuais informações de saúde</td><td>Enquanto vinculados à prestação do acompanhamento na conta; passíveis de exclusão conforme pedido do titular e limites da LGPD.</td></tr>
+<tr><td>Mensagens, convites e vínculos</td><td>Enquanto necessários à funcionalidade e ao relacionamento entre os usuários, considerando também direitos de terceiros que participem das conversas.</td></tr>
+<tr><td>Logs, registros de segurança e backups</td><td>Podem seguir ciclos técnicos e obrigações legais distintos; os períodos exatos ainda precisam ser formalizados pelo responsável.</td></tr>
+<tr><td>Dados processados pela GroqCloud</td><td>Inferência sem retenção por padrão; a Groq admite retenção excepcional de entradas e saídas por até 30 dias para segurança/confiabilidade, ressalvadas exigências legais.</td></tr>
+</tbody></table></div>
+<p>A <strong>função de exclusão de conta já está disponível dentro do aplicativo</strong>. Também é possível solicitá-la pelo e-mail do responsável. A exclusão deverá abranger os dados pessoais associados à conta, salvo retenções legitimamente exigidas ou permitidas pela legislação.</p>
+</section>
+<section class="section" id="seguranca"><span class="eyebrow">07 · Proteção</span><h2>Como as informações são protegidas?</h2>
+<p>A THF MOVE utiliza o <strong>Supabase</strong> para autenticação, banco de dados e comunicação em tempo real. Os serviços e o aplicativo precisam manter mecanismos de autenticação, restrição de acesso conforme perfil e controles técnicos proporcionais aos riscos.</p>
+<p>Também são necessárias medidas administrativas de proteção de credenciais, controle de acesso, revisão de permissões e resposta a incidentes. Embora sejam empregados mecanismos de segurança nas plataformas utilizadas, nenhum serviço digital elimina completamente os riscos de acesso indevido ou falha técnica.</p></section>
+<section class="section" id="seus-direitos"><span class="eyebrow">08 · Seus direitos</span><h2>Quais direitos você pode exercer?</h2>
+<p>Nos termos da LGPD, e conforme as condições legais de cada pedido, você pode:</p>
+<ul><li>Confirmar se seus dados pessoais são tratados e solicitar acesso a eles.</li><li>Corrigir dados incompletos, inexatos ou desatualizados.</li><li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD.</li><li>Solicitar portabilidade, quando cabível e conforme regulamentação aplicável.</li><li>Obter informação sobre compartilhamentos e consequências de não fornecer consentimento, quando pertinente.</li><li>Revogar o consentimento e solicitar eliminação dos dados tratados com base nele, ressalvadas as hipóteses legais de conservação.</li><li>Opor-se a tratamento irregular e pedir revisão de decisões exclusivamente automatizadas que afetem seus interesses.</li><li>Apresentar petição à Autoridade Nacional de Proteção de Dados (ANPD), nas hipóteses previstas em lei.</li></ul>
+<p>Para exercer esses direitos, entre em contato pelo canal indicado ao final desta página. Poderemos solicitar informações estritamente necessárias à confirmação de identidade, para evitar acesso indevido aos dados de outra pessoa.</p>
+</section>
+<section class="section" id="internacional"><span class="eyebrow">09 · Infraestrutura</span><h2>Onde os dados são hospedados? Há transferência internacional?</h2>
+<p>O projeto <strong>Supabase utilizado pela THF MOVE está hospedado na região de São Paulo, Brasil</strong>, conforme informação fornecida pelo responsável pelo aplicativo. Essa é a região principal de hospedagem do banco de dados e dos serviços configurados no projeto.</p>
+<p>Entretanto, a utilização da <strong>GroqCloud</strong> para sugestões de treino pode envolver <strong>transferência internacional de informações para processamento fora do Brasil</strong>. A <a href="https://console.groq.com/docs/your-data" rel="noopener noreferrer" target="_blank">Groq informa</a> que os dados de clientes eventualmente retidos são armazenados em infraestrutura nos <strong>Estados Unidos</strong>. A região do banco Supabase, por si só, não garante que todos os acessos, subprocessadores ou fluxos técnicos permaneçam exclusivamente no Brasil.</p>
+<p>Quando aplicáveis, transferências internacionais devem respeitar os mecanismos, garantias e obrigações previstos na LGPD e na regulamentação da ANPD.</p>
+</section>
+<section class="section" id="menores"><span class="eyebrow">10 · Público-alvo</span><h2>Uso exclusivo por pessoas com 18 anos ou mais</h2>
+<p>A THF MOVE é destinada exclusivamente a pessoas com <strong>18 anos de idade ou mais</strong>, tanto treinadores quanto alunos.</p>
+<p>Ao criar uma conta, a pessoa usuária deve ter pelo menos 18 anos completos. A THF MOVE poderá adotar medidas proporcionais de confirmação da idade, respeitando a legislação de proteção de dados e evitando a coleta desnecessária de documentos ou informações pessoais.</p>
+<p>Se for identificada uma conta pertencente a uma pessoa menor de 18 anos, a THF MOVE poderá restringir seu acesso e adotar as providências cabíveis para encerramento da conta e tratamento ou exclusão de seus dados pessoais, respeitados os direitos dos titulares e as obrigações legais aplicáveis.</p>
+</section>
+<section class="section" id="tecnologias"><span class="eyebrow">11 · Recursos técnicos</span><h2>Permissões e recursos do dispositivo</h2>
+<p>A THF MOVE <strong>não exige permissões adicionais do dispositivo</strong> para acessar localização, câmera, microfone, agenda de contatos ou galeria de fotos. O aplicativo utiliza a conexão à internet necessária à autenticação, sincronização de treinos e comunicação.</p>
+<p>O serviço pode processar dados técnicos necessários à operação de seus fornecedores de infraestrutura. O endereço de e-mail da conta não é usado para ações de publicidade ou marketing por e-mail.</p></section>
+<section class="section" id="atualizacoes"><span class="eyebrow">12 · Evolução</span><h2>Alterações desta política</h2>
+<p>Esta Política poderá ser atualizada para refletir mudanças nas funcionalidades, prestadores de serviço ou exigências legais. A data da última atualização ficará indicada no início desta página. Quando necessário, mudanças relevantes serão comunicadas pelos canais apropriados.</p>
+</section>
+<section class="section" id="contato"><span class="eyebrow">13 · Atendimento</span><h2>Como entrar em contato?</h2>
+<p>Para solicitar informações, exercer direitos previstos na LGPD, comunicar dúvidas sobre privacidade ou pedir a exclusão de uma conta pela Web, utilize os contatos abaixo:</p>
+<div class="info-grid">
+<div class="info"><span>Responsável</span><p>Thiago Figueiredo Dias da Costa</p></div>
+<div class="info"><span>E-mail de privacidade</span><p><a href="mailto:thi.mkt82@gmail.com">thi.mkt82@gmail.com</a></p></div>
+<div class="info"><span>Telefone</span><p><a href="tel:+5511968443912">(11) 96844-3912</a></p></div>
+<div class="info"><span>Localidade</span><p>São Paulo, SP, Brasil</p></div>
+</div>
+<p>Podemos solicitar confirmação adequada da titularidade antes de fornecer informações pessoais ou realizar exclusões. O titular também pode consultar a <a href="https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados" rel="noopener noreferrer" target="_blank">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</p></section>
+</main>
+</div>
+<footer class="foot"><strong>THF MOVE</strong> · Transparência no uso de dados pessoais · <a href="index.html">Política de Privacidade</a> <br/>Última atualização: 5 de novembro de 2026</footer>
+</body></html>
